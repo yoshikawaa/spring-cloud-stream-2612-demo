@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    function:
+      definition: supply
+    stream:
+      bindings:
+        supply-out-0:
+          destination: test
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - channels
